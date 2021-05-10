@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-left">
+    <h2 class="display-2">Price Quotation</h2>
+    <form formaction="get">
+        <div class="container-fluid">
+            <div class="form-row">
+                <div class="col-2">
+                    <p>Subtotal:</p>
+                </div>
+                <div class="col-5">
+                    <input id="subtotalTxt" type="number" />
+                </div>
+                <div class="col-5">
+                    <p id="subtotalWarningTxt"></p>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-2">
+                    <p>Discount Percent:</p>
+                </div>
+                <div class="col-5">
+                    <input id="discountTxt" type="number" />
+                </div>
+                <div class="col-5">
+                    <p id="discountWarningTxt"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <p>Discount amount:</p>
+                </div>
+                <div class="col-5">
+                    <p id="discountTxt">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <p>Total:</p>
+                </div>
+                <div class="col-5">
+                    <p id="totalTxt">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <button type="submit" class="btn-light">Calculate</button>
+                    <button type="reset" class="btn-light">Reset</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+</div>
